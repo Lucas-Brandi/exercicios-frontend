@@ -1,23 +1,49 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Calculadora de Imc</title>
-  </head>
 
-  <body>
-    <h1>Calculador de imc</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="stylesheet">
 
-    <div id="inputbox">
-      <p>Digite o seu peso</p>
-      <input class="peso" type="number" placeholder="peso" />
-      <p>Digite sua altura (em metros)</p>
-      <input class="altura" type="number" placeholder="altura" />
-      <button onclick="calcularIMC()">Enviar</button>
+  <link rel="icon" href="imgs/moeda-removebg-preview.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Conversor de moedas</title>
+</head>
+
+<body>
+  <section class="container">
+    <h1>Conversor de moedas</h1>
+    <div class="input-group">
+      <label for="amount">Valor:</label>
+      <input type="number" id="amount" placeholder="Digite o valor em real" />
     </div>
-    <div id="resultado"></div>
-    <script src="app.js"></script>
-  </body>
+    <div class="dollar-converter">
+      <div class="currency-header">
+        <h2>Em Dólar</h2>
+        <img src="imgs/eua_flag.png" alt="Dólar" class="dollar-icon" />
+      </div>
+      <button id="convert-eua-btn">Converter para Dólar</button>
+      <div id="dollar-result"></div>
+      <p> Valor do Dólar: <span id="dollar-value">5.13 R$</span></p>
+    </div>
+    <div class="euro-converter">
+      <div class="currency-header">
+
+        <h2>Em Euros</h2>
+        <img src="imgs/europe_flag.png" alt="Euro" class="europe-icon" />
+      </div>
+
+      <button id="convert-euro-btn">Converter para Euro</button>
+      <div id="euro-result"></div>
+      <p> Valor do Euro: <span id="euro-value">6,06 R$</span></p>
+
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+
 </html>
