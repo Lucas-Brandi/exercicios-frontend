@@ -1,14 +1,59 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f0f2f5; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; 
+    /* Centraliza o container na viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Evita que o container encoste nas bordas em telas pequenas */
+}
+
+#container {
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    flex-direction: row; /* Mantém os cards lado a lado */
+    align-items: stretch; /* Faz os cards terem a mesma altura */
+    gap: 30px; 
+    padding: 100px 40px 40px 40px; /* Espaço superior para o h1 */
+    width: 100%;
+    max-width: 900px; /* Define um limite de largura para não esticar demais */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+}
+
+h1 {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+#input-group, #items-list {
+    background-color: azure;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+}
+
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
