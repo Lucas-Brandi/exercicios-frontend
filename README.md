@@ -13,6 +13,8 @@ Um site que pode alternar entre modo claro e modo escuro
 Um site que calcula seu imc ao digitar os valores na tela.
 
 ---
+### 💵 Conversor de câmbio
+Um conversor de real para dólar e euro
 
 ## 📌 Tecnologias utilizadas
 
