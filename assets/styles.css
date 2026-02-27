@@ -40,7 +40,7 @@ h1 {
 }
 
 #input-group, #items-list {
-    background-color: azure;
+    background-color: #DFE4E6;
     flex: 1; 
     display: flex;
     flex-direction: column;
@@ -56,4 +56,45 @@ input, button {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ddd;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-expense, .calculate-expenses {
+    background-color: #7B68EE;
+    color: white;
+}
+
+.add-expense:hover, .calculate-expenses:hover {
+    background-color: #6A5ACD;
+}
+
+#clear-list {
+   background-color: #e00303;
+   width: 40px;
+   height: 40px;
+   
+}
+
+/* responsividade */
+@media (max-width: 600px) {
+    #container { flex-direction: column; padding-top: 80px; }
+}
+
+/* Estilos para a lista de itens */
+#expense-list {
+    list-style: none;
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto; 
+
+}
+
+#expense-list li {
+    background: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
 }

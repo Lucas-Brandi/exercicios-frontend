@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imgs/school-9.png">
     <title>Document</title>
 </head>
 
@@ -15,12 +16,12 @@
     <div id="container">
         <h1>Controle de Gastos</h1>
         <div id="input-group">
-            <p>Por favor, preencha os campos abaixo</p>           
-                <label for="item">Item:</label>
-                <input type="text" id="item" name="item">
-                <label for="amount">Valor:</label>
-                <input type="number" id="amount" name="amount">
-                <button id="add-expense">Adicionar</button>         
+            <p>Por favor, preencha os campos abaixo</p>
+            <label for="item">Item:</label>
+            <input type="text" id="item" name="item">
+            <label for="amount">Valor:</label>
+            <input type="number" id="amount" name="amount">
+            <button class="add-expense">Adicionar</button>
         </div>
         <div id="items-list">
             <h2>Lista de Gastos</h2>
@@ -29,7 +30,7 @@
                 <button id="clear-list">x</button>
             </div>
 
-            <button id="calculate-expenses">Calcular Total</button>
+            <button class="calculate-expenses">Calcular Total</button>
         </div>
     </div>
     <script src="app.js"></script>

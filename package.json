@@ -1,0 +1,24 @@
+{
+  "name": "exercicios-fullstack",
+  "version": "1.0.0",
+  "description": "Um contador de números que pode aumentar,diminuir ou zerar, a depender do que for clicado pelo usuário",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-Brandi/exercicios-fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Lucas-Brandi/exercicios-fullstack/issues"
+  },
+  "homepage": "https://github.com/Lucas-Brandi/exercicios-fullstack#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
